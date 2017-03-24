@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <SmartIT>
+            <label>SmartIT</label>
+            <sort_order>195</sort_order>
+        </SmartIT>
+    </tabs>
+    <sections>
+          <googleproductsfeed translate="label" module="GoogleProductsFeed">
+            <label>Google Products Feed</label>
+            <tab>SmartIT</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>71</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <sort_order>600</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <comment><![CDATA[ When enabled you can access the feed by poiting your browser to http://magentodomain/GoogleProductsFeed ]]></comment>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+						<filename translate="label">
+                            <label>Generated File Name</label>
+                            <frontend_type>select</frontend_type>
+                            <comment><![CDATA[ File name that will be generated on root magento folder. (Default: products.xml) ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </filename>
+						<sitetitle translate="label">
+                            <label>Site Title</label>
+                            <comment><![CDATA[ Site title to send on Google Feed ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sitetitle>
+						<sitedescription translate="label">
+                            <label>Site Description</label>
+                            <comment><![CDATA[ Site description to send on Google Feed ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>21</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sitedescription>
+						<siteurl translate="label">
+                            <label>Site URL</label>
+                            <comment><![CDATA[ Site URL to send on Google Feed ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>22</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </siteurl>
+						<currencycode translate="label">
+                            <label>Currency Code</label>
+                            <comment><![CDATA[ Product's price currency to send on Google Feed ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </currencycode>		
+						<imgresizewidth translate="label">
+                            <label>Image Resize [Width]</label>
+                            <comment><![CDATA[ If you leave it blank or 0, the original size will be sent ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </imgresizewidth>						
+                        <imgresizeheight translate="label">
+                            <label>Image Resize [Height]</label>
+                            <comment><![CDATA[ If you leave it blank or 0, the original size will be sent ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>61</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </imgresizeheight>
+						<productcondition translate="label">
+                            <label>Product Condition Configuration</label>
+                            <comment><![CDATA[ Fill it with the product attribute name that contains the condition. <br>If the attribute was not found, it will be sent exactly as typed for all products. ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </productcondition>
+						<producttype translate="label">
+                            <label>Product Type Configuration</label>
+                            <comment><![CDATA[ Leave if blank to infere automagically (just one tree) or fill it with the product attribute name that contains the category. (ex: Home > Women > Dresses > Maxi Dresses) <br>If the attribute was not found, it will NOT be sent. ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>71</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </producttype>	
+						<gtin translate="label">
+                            <label>Gtin Configuration</label>
+                            <comment><![CDATA[ Fill it with the product attribute name that contains the gtin.<br> If the attribute was not found, but if it is filled it will be sent as typed.<br>If left blank, it will NOT be sent. ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>72</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </gtin>
+						<mpn translate="label">
+                            <label>Mpn Configuration</label>
+                            <comment><![CDATA[ Fill it with the product attribute name that contains the mpn.<br> If the attribute was not found, but if it is filled it will be sent as typed.<br>If left blank, it will NOT be sent. ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>73</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </mpn>						
+						<googleproductcategory translate="label">
+                            <label>Google Products Category Configuration</label>
+                            <comment><![CDATA[ Fill it with the product attribute name that contains the category. <br>If you fill it with a numeric value (for instance: 166 that stands for Apparel & Accessories (166)) all the products will be sent with that code.<br> Finally, if its not a number or product attribute, it will be sent exactly as typed. ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>74</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </googleproductcategory>
+                        <urlparam translate="label">
+                            <label>Optional URL parameters</label>
+                            <comment><![CDATA[ Extra parameters to add to product URLs. For example: utm_source=smartit&utm_medium=feed&utm_campaign=mycampaign ]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </urlparam>						
+					</fields>
+                </general>
+		   </groups>
+        </googleproductsfeed>
+    </sections>
+</config>

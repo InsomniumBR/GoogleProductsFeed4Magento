@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<SmartIT_GoogleProductsFeed>
+			<version>1.0.0</version>
+		</SmartIT_GoogleProductsFeed>
+	</modules>
+	<frontend>
+		<routers>
+			<GoogleProductsFeed>
+				<use>standard</use>
+				<args>
+					<module>SmartIT_GoogleProductsFeed</module>
+					<frontName>googleproductsfeed</frontName>
+				</args>
+			</GoogleProductsFeed>
+		</routers>
+	</frontend>
+	<global>
+		<helpers>
+			<GoogleProductsFeed>
+				<class>SmartIT_GoogleProductsFeed_Helper</class>
+			</GoogleProductsFeed>
+		</helpers>
+		<resources>
+			<GoogleProductsFeed_setup>
+				<setup>
+					<module>SmartIT_GoogleProductsFeed</module>
+					<class>Mage_Catalog_Model_Resource_Setup</class>
+				</setup>
+			</GoogleProductsFeed_setup>
+		</resources>		 
+	</global>
+	<default>
+		<googleproductsfeed>
+			<general>			
+				<enabled>1</enabled>
+				<urlparam/>
+				<imgresizewidth>0</imgresizewidth>
+				<imgresizeheight>0</imgresizeheight>
+				<sitetitle>SmartIT Store</sitetitle>
+				<sitedescription>We sell the best products here!</sitedescription>
+				<siteurl>http://www.smartit.com.br/</siteurl>
+				<currencycode>USD</currencycode>
+				<productcondition>condition</productcondition>
+				<googleproductcategory>166</googleproductcategory>
+				<producttype/>
+				<gtin/>
+				<mpn/>
+				<filename>products.xml</filename>
+			</general>      				
+		</googleproductsfeed>
+	</default>
+</config>
